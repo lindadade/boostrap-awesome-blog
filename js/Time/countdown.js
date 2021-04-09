@@ -121,7 +121,7 @@ function updateBalls() {
 		// 是则添加小球
 			balls[cnt++] = balls[i]
 	// 只保留 300 或存在画布的小球
-	while( balls.length > cnt ){
+	while( balls.length > Math.min(400, cnt) ){
 		balls.pop();
 	}
 }
