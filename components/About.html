@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="林大人的小屋 - 用于记录生活的点滴">
+	<meta name="keywords" content="生活 博客 记录 林大人 网页 动画 响应式 HTML5 CSS3 Bootstrap Javascript HTML">
+	<meta name="author" content="林大人">
+
+	<!-- 网站icon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/index/icon2.svg">
+	<link rel="icon" type="image/png" href="img/index/icon2.svg" sizes="16x16">
+
+	<!-- 样式 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- 引入本地样式，需要放至最后，否则将被覆盖 -->
+	<link href="../css/home.css" rel="stylesheet">
+	<title>林大人 － Record Life</title>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand gradient-text" href="/">
+					<img src="../img/index/icon.svg">
+					记录生活 - Record Life
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="./Introduction.html">小姐和先生</a></li>
+					<li><a href="./MissPicture.html">罗小姐的图</a></li>
+					<li><a href="./Time.html">我们的时间</a></li>
+					<li><a href="#">关于的我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<!--<section id="about">-->
+<!--	<div class="container">-->
+<!--		<div class="title">-->
+<!--			<h4 class="text-center">关于我们</h4>-->
+<!--			<div></div>-->
+<!--		</div>-->
+<!--		<div class="row">-->
+<!--			<div class="col-sm-6 logo scrollimation fade-right">-->
+<!--				<h1>MEWE<span>IDEA.COM</span></h1>-->
+<!--				<h4>觅未创意&trade;</h4>-->
+<!--				<div class="addr scrollimation fade-right d2">-->
+<!--					<address>-->
+<!--						北京市朝阳区酒仙桥路14号兆维工业园C3座<br>-->
+<!--						<span class="hidden-xs">电话：</span><i class="fa fa-phone visible-xs-inline" aria-hidden="true"></i>+86-10-80813586<br>-->
+<!--						<span class="hidden-xs">邮箱：</span>business@meweidea.com-->
+<!--					</address>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="col-sm-6 slogon scrollimation fade-left d1">-->
+<!--				<p>我们是领先的品牌咨询&服务平台，由各领域精英组成，包括国际4A美术指导，知名设计公司设计总监、策略总监，知名互联网公司UI负责人、技术主管；</p>-->
+<!--				<p>我们是一支经验丰富、具有国际化视野和创新能力的团队；</p>-->
+<!--				<p>我们坚持“与梦想者同行”，致力于成为“从中国制造到中国创造”这场变革的重要参与者。</p>-->
+<!--				<div class="city text-right scrollimation fade-left d3">-->
+<!--					<img-->
+<!--						src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;b37e22d9b1e31366982c2f02368b8a531b925e39/city.png">-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		<div id="users" class="users text-center">-->
+<!--			<div class="item">-->
+<!--				<div class="container-icon"><img-->
+<!--					src="http://www.meweidea.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBJZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;ba5350504b22b906c3f0f9c10d724c5f2c87389f/duyan.png"-->
+<!--					class="img-circle"></div>-->
+<!--				<h4 class="quote-author">杜燕 / 创意执行总监<span></span></h4>-->
+<!--				<p>曾就职于法国阳狮，日本电通等知名4A广告公司；服务客户：雀巢，联想，中粮，索尼爱立信，万科等；擅长：品牌梳理与定位、视觉设计、包装设计</p>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="container-icon"><img-->
+<!--					src="http://www.meweidea.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBJdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;3f605e866c87f6279c756991ebc8cad68ab71a30/xiaofu.png"-->
+<!--					class="img-circle"></div>-->
+<!--				<h4 class="quote-author">张振福 / 项目负责人<span></span></h4>-->
+<!--				<p>曾就职于中国知名设计公司和4A广告公司；服务客户：伊利，远洋，中粮，白象，三全等；擅长：品牌VI、包装设计、视觉广告</p>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="container-icon"><img-->
+<!--					src="http://www.meweidea.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBXdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;51afbeda2afe1fc6371234d72efc2a8fb893b02f/pony.png"-->
+<!--					class="img-circle"></div>-->
+<!--				<h4 class="quote-author">Pony / 项目负责人<span></span></h4>-->
+<!--				<p>曾职于国际知名4A广告公司；服务客户：雀巢咖啡等；擅长：插画设计、广告创意、视觉设计</p>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="container-icon"><img-->
+<!--					src="http://www.meweidea.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBYQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;81a34cf4b799c54b52a0d0cb26a8a41ff54a9682/hcx.png"-->
+<!--					class="img-circle"></div>-->
+<!--				<h4 class="quote-author">何春香 / 资深策略<span></span></h4>-->
+<!--				<p>就职于国际知名4A广告公司；服务客户：Jeep，蒙牛，拉斐尔，能量豆等；擅长：品牌策略、广告策划</p>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="container-icon"><img-->
+<!--					src="http://www.meweidea.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBYUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;e2303f302d52fd2daa6d9a6eb458efd9431b88cf/vian.png"-->
+<!--					class="img-circle"></div>-->
+<!--				<h4 class="quote-author">Vion / 文案总监<span></span></h4>-->
+<!--				<p>曾就职于国际知名4A广告公司；服务客户：京东，杜蕾斯，雀巢等；擅长：广告策划、创意文案、传播推广</p>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</section>-->
+
+<!--<section id="contact">-->
+<!--	<div class="container-fluid dark-bg text-center">-->
+<!--		<div class="container text-center clients">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;cdbd13b4a4015c6845b4b44cb4bc132a41309c0b/1.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;432afbcf7793261ebcd66249cc4ea2973c95ab3d/2.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;022ee43a71a4b6f9d8ad9c07cc77eff181d1509f/3.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;30093540962b3d73bc05bc03ef9c7d3c789a87ad/4.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;7a3bc07efa3a7082a86630d88485c455b3309f73/5.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;2d99a8153cba7563490e1cce0dd9c993025bc638/6.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;ec51d56b40be131d974d49f73bd6cd84074e3700/8.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;04434937493488ce91994124e69d6c7fd148fca9/9.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;a7c2736ff33fb181301ecbfb8b9cf353a11c8640/10.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;0a77f45b973037cd9db9e3bf97f94ac081d1f540/11.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;be44077fd14e69543a1dfcfd373fcf38cc86d01d/12.png">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;84ed7f3ad7c39c4e4d0134ce9165925146b07ccd/7.png">-->
+<!--		</div>-->
+<!--		<div id="quotes" class="container quotes">-->
+
+<!--		</div>-->
+<!--		<div id="wechat" class="contact-btn container scrollimation scale-in">-->
+<!--			<img-->
+<!--				src="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBIQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19&#45;&#45;f16d1de27ac7a684234c15f42172ca8aa73532e5/wechat.jpg">-->
+<!--			<h4>详细服务及报价，请扫二维码加入我们的微信服务号进行咨询</h4>-->
+<!--			<p>或</p>-->
+<!--			<p>微信搜索公众号：觅未创意</p>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</section>-->
+
+
+<footer>
+	<div class="container">
+		<div class="col-sm-12 text-center">
+			&copy; 2016-2021 林大大的小屋 版权所有
+			<a href="#" target="_blank" class="link">林大人的房间2211号</a>
+		</div>
+	</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+</body>
+</html>
