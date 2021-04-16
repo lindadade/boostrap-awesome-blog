@@ -50,7 +50,7 @@ function getCurrentShowTimeSeconds() {
 // 时间开始
 function timerStart(){
 	const startTime = new Date(Timer[0], Timer[1]-1, Timer[2], Timer[3], Timer[4], Timer[5])
-	let duration = parseInt(+(new Date() - startTime)/1000 / 3600 / 24)
+	let duration = parseInt(Math.ceil(+(new Date() - startTime)/1000 / 3600 / 24))
 	const days = '' + duration + ' 个日夜';
 	const timerDom = document.getElementById('dayTimer')
 	timerDom.innerHTML = (days);
@@ -97,7 +97,6 @@ function update() {
 	}
 	// 更新小球
 	updateBalls();
-	console.log('小球数组数量：', balls.length)
 }
 
 // 更新小球运动
