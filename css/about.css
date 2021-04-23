@@ -69,3 +69,12 @@
 .owl-carousel .owl-controls .owl-page span {
 	background: #000;
 }
+
+.title-container {
+	padding: 6%;
+}
+
+.header-title {
+	font-size: 38px;
+	font-weight: 600;
+}

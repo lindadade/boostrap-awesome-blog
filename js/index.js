@@ -11,6 +11,7 @@ $(document).ready(function() {
 			gutterWidth: 0
 		});
 
+		scrollSpyRefresh();
 		waypointsRefresh();
 	});
 
@@ -66,6 +67,20 @@ $(document).ready(function() {
 		stopOnHover: true,
 		pagination: true
 	});
+
+	$('a.scrollto').click(function(e){
+		if ($('.navbar-collapse').hasClass('in')){
+			$('.navbar-collapse').removeClass('in').addClass('collapse');
+		}
+		$('html,body').scrollTo(this.hash, this.hash, {});
+		e.preventDefault();
+	});
+
+	function scrollSpyRefresh(){
+		setTimeout(function(){
+			$('body').scrollspy('refresh');
+		},1000);
+	}
 
 	function waypointsRefresh(){
 		setTimeout(function(){
